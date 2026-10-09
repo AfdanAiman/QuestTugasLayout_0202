@@ -20,10 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TugasActivityTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+                    Tugaspam(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
