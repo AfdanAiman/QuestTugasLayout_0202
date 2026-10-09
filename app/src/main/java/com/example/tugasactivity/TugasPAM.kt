@@ -5,10 +5,14 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.rememberScrollState
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Text
@@ -96,7 +100,95 @@ fun CardWidget(
         }
     }
 }
+@Composable
+fun Tugaspam(modifier: Modifier = Modifier){
+    val scrollState = rememberScrollState()
 
-fun TugasPAM(modifier: Modifier = Modifier){
+
+    Column(
+        modifier = modifier
+            .fillMaxSize()
+            .verticalScroll(scrollState),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Spacer(modifier = Modifier.height(20.dp))
+
+
+        Text(
+            text = stringResource(id = R.string.prodi),
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(id = R.color.text_dark)
+        )
+        Text(
+            text = stringResource(id = R.string.univ),
+            fontSize = 16.sp,
+            fontWeight = FontWeight.Bold,
+            color = colorResource(id = R.color.text_dark)
+        )
+
+        Spacer(modifier = Modifier.height(16.dp))
+
+
+        CardWidget(
+            backgroundColorRes = R.color.card_bg_redbull,
+            nameRes = R.string.nama1,
+            nameColorRes = R.color.text_redbull_red,
+            phoneRes = R.string.phone1,
+            phoneColorRes = R.color.text_redbull_red,
+            addressRes = R.string.alamat1,
+            addressColorRes = R.color.text_redbull_red,
+            imageRes = R.drawable.maxxx
+        )
+
+
+        CardWidget(
+            backgroundColorRes = R.color.card_bg_ferrari,
+            nameRes = R.string.nama2,
+            nameColorRes = R.color.text_white,
+            phoneRes = R.string.phone2,
+            phoneColorRes = R.color.text_white,
+            addressRes = R.string.alamat2,
+            addressColorRes = R.color.text_white,
+            imageRes = R.drawable.hamilton
+        )
+
+
+        CardWidget(
+            backgroundColorRes = R.color.card_bg_ferrari,
+            nameRes = R.string.nama3,
+            nameColorRes = R.color.text_white,
+            phoneRes = R.string.phone3,
+            phoneColorRes = R.color.text_white,
+            addressRes = R.string.alamat3,
+            addressColorRes = R.color.text_white,
+            imageRes = R.drawable.leclerc
+        )
+
+
+        CardWidget(
+            backgroundColorRes = R.color.card_bg_mclaren,
+            nameRes = R.string.nama4,
+            nameColorRes = R.color.text_dark,
+            phoneRes = R.string.phone4,
+            phoneColorRes = R.color.text_dark,
+            addressRes = R.string.alamat4,
+            addressColorRes = R.color.text_dark,
+            imageRes = R.drawable.norris
+        )
+
+        Spacer(modifier = Modifier.weight(1f, fill = false))
+
+
+        Spacer(modifier = Modifier.height(30.dp))
+
+
+        Text(
+            text = stringResource(id = R.string.copy),
+            fontSize = 14.sp,
+            color = colorResource(id = R.color.text_dark),
+            modifier = Modifier.padding(bottom = 20.dp)
+        )
+    }
 
 }
