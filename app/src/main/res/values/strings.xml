@@ -2,6 +2,7 @@
     <string name="app_name">TugasActivity</string>
     <string name="prodi">Teknologi Informasi</string>
     <string name="univ">Universitas Muhammadiyah Yogyakarta</string>
+
     <string name="nama1">Max Verstappen</string>
     <string name="phone1">0878999767665</string>
     <string name="alamat1">Mareterra, Monako</string>
@@ -13,6 +14,8 @@
     <string name="nama3">Charles Leclerc</string>
     <string name="phone3">0878999765465</string>
     <string name="alamat3">Monte Carlo, Monaco</string>
+
+    <string name="nama4">Lando Norris</string>
 
 
 
