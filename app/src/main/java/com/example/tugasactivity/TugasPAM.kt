@@ -97,4 +97,6 @@ fun CardWidget(
     }
 }
 
+fun TugasPAM(modifier: Modifier = Modifier){
 
+}
