@@ -11,4 +11,6 @@
     <color name="card_bg_redbull">#121F45</color>
     <color name="card_bg_ferrari">#EF1A2D</color>
     <color name="card_bg_mclaren">#FF8000</color>
+
+    <color name="text_redbull_red">#ED1C24</color>
 </resources>
